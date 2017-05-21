@@ -1,0 +1,12 @@
+# Executables
+*.exe
+*.out
+*.app
+
+# Generated files, temp files, etc. 
+.DS_Store
+*.pdf
+.#*
+*~
+*#
+.vscode
