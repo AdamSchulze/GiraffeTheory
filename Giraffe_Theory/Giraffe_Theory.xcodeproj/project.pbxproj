@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AF8A3F61ED24F930042F833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F51ED24F930042F833 /* AppDelegate.swift */; };
+		1AF8A3F81ED24F930042F833 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F71ED24F930042F833 /* GameScene.sks */; };
+		1AF8A3FA1ED24F930042F833 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F91ED24F930042F833 /* Actions.sks */; };
+		1AF8A3FC1ED24F930042F833 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A3FB1ED24F930042F833 /* GameScene.swift */; };
+		1AF8A3FE1ED24F930042F833 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A3FD1ED24F930042F833 /* GameViewController.swift */; };
+		1AF8A4011ED24F930042F833 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A3FF1ED24F930042F833 /* Main.storyboard */; };
+		1AF8A4031ED24F930042F833 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A4021ED24F930042F833 /* Assets.xcassets */; };
+		1AF8A4061ED24F930042F833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A4041ED24F930042F833 /* LaunchScreen.storyboard */; };
+		1AF8A4111ED24F930042F833 /* Giraffe_TheoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A4101ED24F930042F833 /* Giraffe_TheoryTests.swift */; };
+		1AF8A41C1ED24F940042F833 /* Giraffe_TheoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A41B1ED24F940042F833 /* Giraffe_TheoryUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AF8A40D1ED24F930042F833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AF8A3EA1ED24F930042F833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AF8A3F11ED24F930042F833;
+			remoteInfo = Giraffe_Theory;
+		};
+		1AF8A4181ED24F940042F833 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AF8A3EA1ED24F930042F833 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AF8A3F11ED24F930042F833;
+			remoteInfo = Giraffe_Theory;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AF8A3F21ED24F930042F833 /* Giraffe_Theory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giraffe_Theory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF8A3F51ED24F930042F833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AF8A3F71ED24F930042F833 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		1AF8A3F91ED24F930042F833 /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
+		1AF8A3FB1ED24F930042F833 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		1AF8A3FD1ED24F930042F833 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		1AF8A4001ED24F930042F833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AF8A4021ED24F930042F833 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1AF8A4051ED24F930042F833 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1AF8A4071ED24F930042F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF8A40C1ED24F930042F833 /* Giraffe_TheoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Giraffe_TheoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF8A4101ED24F930042F833 /* Giraffe_TheoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giraffe_TheoryTests.swift; sourceTree = "<group>"; };
+		1AF8A4121ED24F930042F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AF8A4171ED24F940042F833 /* Giraffe_TheoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Giraffe_TheoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF8A41B1ED24F940042F833 /* Giraffe_TheoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giraffe_TheoryUITests.swift; sourceTree = "<group>"; };
+		1AF8A41D1ED24F940042F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AF8A3EF1ED24F930042F833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF8A4091ED24F930042F833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF8A4141ED24F940042F833 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AF8A3E91ED24F930042F833 = {
+			isa = PBXGroup;
+			children = (
+				1AF8A3F41ED24F930042F833 /* Giraffe_Theory */,
+				1AF8A40F1ED24F930042F833 /* Giraffe_TheoryTests */,
+				1AF8A41A1ED24F940042F833 /* Giraffe_TheoryUITests */,
+				1AF8A3F31ED24F930042F833 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AF8A3F31ED24F930042F833 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8A3F21ED24F930042F833 /* Giraffe_Theory.app */,
+				1AF8A40C1ED24F930042F833 /* Giraffe_TheoryTests.xctest */,
+				1AF8A4171ED24F940042F833 /* Giraffe_TheoryUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AF8A3F41ED24F930042F833 /* Giraffe_Theory */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8A3F51ED24F930042F833 /* AppDelegate.swift */,
+				1AF8A3F71ED24F930042F833 /* GameScene.sks */,
+				1AF8A3F91ED24F930042F833 /* Actions.sks */,
+				1AF8A3FB1ED24F930042F833 /* GameScene.swift */,
+				1AF8A3FD1ED24F930042F833 /* GameViewController.swift */,
+				1AF8A3FF1ED24F930042F833 /* Main.storyboard */,
+				1AF8A4021ED24F930042F833 /* Assets.xcassets */,
+				1AF8A4041ED24F930042F833 /* LaunchScreen.storyboard */,
+				1AF8A4071ED24F930042F833 /* Info.plist */,
+			);
+			path = Giraffe_Theory;
+			sourceTree = "<group>";
+		};
+		1AF8A40F1ED24F930042F833 /* Giraffe_TheoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8A4101ED24F930042F833 /* Giraffe_TheoryTests.swift */,
+				1AF8A4121ED24F930042F833 /* Info.plist */,
+			);
+			path = Giraffe_TheoryTests;
+			sourceTree = "<group>";
+		};
+		1AF8A41A1ED24F940042F833 /* Giraffe_TheoryUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8A41B1ED24F940042F833 /* Giraffe_TheoryUITests.swift */,
+				1AF8A41D1ED24F940042F833 /* Info.plist */,
+			);
+			path = Giraffe_TheoryUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AF8A3F11ED24F930042F833 /* Giraffe_Theory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF8A4201ED24F940042F833 /* Build configuration list for PBXNativeTarget "Giraffe_Theory" */;
+			buildPhases = (
+				1AF8A3EE1ED24F930042F833 /* Sources */,
+				1AF8A3EF1ED24F930042F833 /* Frameworks */,
+				1AF8A3F01ED24F930042F833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Giraffe_Theory;
+			productName = Giraffe_Theory;
+			productReference = 1AF8A3F21ED24F930042F833 /* Giraffe_Theory.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AF8A40B1ED24F930042F833 /* Giraffe_TheoryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF8A4231ED24F940042F833 /* Build configuration list for PBXNativeTarget "Giraffe_TheoryTests" */;
+			buildPhases = (
+				1AF8A4081ED24F930042F833 /* Sources */,
+				1AF8A4091ED24F930042F833 /* Frameworks */,
+				1AF8A40A1ED24F930042F833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AF8A40E1ED24F930042F833 /* PBXTargetDependency */,
+			);
+			name = Giraffe_TheoryTests;
+			productName = Giraffe_TheoryTests;
+			productReference = 1AF8A40C1ED24F930042F833 /* Giraffe_TheoryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1AF8A4161ED24F940042F833 /* Giraffe_TheoryUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AF8A4261ED24F940042F833 /* Build configuration list for PBXNativeTarget "Giraffe_TheoryUITests" */;
+			buildPhases = (
+				1AF8A4131ED24F940042F833 /* Sources */,
+				1AF8A4141ED24F940042F833 /* Frameworks */,
+				1AF8A4151ED24F940042F833 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AF8A4191ED24F940042F833 /* PBXTargetDependency */,
+			);
+			name = Giraffe_TheoryUITests;
+			productName = Giraffe_TheoryUITests;
+			productReference = 1AF8A4171ED24F940042F833 /* Giraffe_TheoryUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AF8A3EA1ED24F930042F833 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "TUSJATL Games";
+				TargetAttributes = {
+					1AF8A3F11ED24F930042F833 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					1AF8A40B1ED24F930042F833 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1AF8A3F11ED24F930042F833;
+					};
+					1AF8A4161ED24F940042F833 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1AF8A3F11ED24F930042F833;
+					};
+				};
+			};
+			buildConfigurationList = 1AF8A3ED1ED24F930042F833 /* Build configuration list for PBXProject "Giraffe_Theory" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AF8A3E91ED24F930042F833;
+			productRefGroup = 1AF8A3F31ED24F930042F833 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AF8A3F11ED24F930042F833 /* Giraffe_Theory */,
+				1AF8A40B1ED24F930042F833 /* Giraffe_TheoryTests */,
+				1AF8A4161ED24F940042F833 /* Giraffe_TheoryUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AF8A3F01ED24F930042F833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF8A4011ED24F930042F833 /* Main.storyboard in Resources */,
+				1AF8A3F81ED24F930042F833 /* GameScene.sks in Resources */,
+				1AF8A4031ED24F930042F833 /* Assets.xcassets in Resources */,
+				1AF8A4061ED24F930042F833 /* LaunchScreen.storyboard in Resources */,
+				1AF8A3FA1ED24F930042F833 /* Actions.sks in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF8A40A1ED24F930042F833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF8A4151ED24F940042F833 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AF8A3EE1ED24F930042F833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF8A3FC1ED24F930042F833 /* GameScene.swift in Sources */,
+				1AF8A3FE1ED24F930042F833 /* GameViewController.swift in Sources */,
+				1AF8A3F61ED24F930042F833 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF8A4081ED24F930042F833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF8A4111ED24F930042F833 /* Giraffe_TheoryTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF8A4131ED24F940042F833 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AF8A41C1ED24F940042F833 /* Giraffe_TheoryUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AF8A40E1ED24F930042F833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AF8A3F11ED24F930042F833 /* Giraffe_Theory */;
+			targetProxy = 1AF8A40D1ED24F930042F833 /* PBXContainerItemProxy */;
+		};
+		1AF8A4191ED24F940042F833 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AF8A3F11ED24F930042F833 /* Giraffe_Theory */;
+			targetProxy = 1AF8A4181ED24F940042F833 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AF8A3FF1ED24F930042F833 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF8A4001ED24F930042F833 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AF8A4041ED24F930042F833 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AF8A4051ED24F930042F833 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AF8A41E1ED24F940042F833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AF8A41F1ED24F940042F833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AF8A4211ED24F940042F833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Giraffe_Theory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TUSJATL.Giraffe-Theory";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		1AF8A4221ED24F940042F833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Giraffe_Theory/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TUSJATL.Giraffe-Theory";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		1AF8A4241ED24F940042F833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Giraffe_TheoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TUSJATL.Giraffe-TheoryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Giraffe_Theory.app/Giraffe_Theory";
+			};
+			name = Debug;
+		};
+		1AF8A4251ED24F940042F833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Giraffe_TheoryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TUSJATL.Giraffe-TheoryTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Giraffe_Theory.app/Giraffe_Theory";
+			};
+			name = Release;
+		};
+		1AF8A4271ED24F940042F833 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Giraffe_TheoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TUSJATL.Giraffe-TheoryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Giraffe_Theory;
+			};
+			name = Debug;
+		};
+		1AF8A4281ED24F940042F833 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = Giraffe_TheoryUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.TUSJATL.Giraffe-TheoryUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Giraffe_Theory;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AF8A3ED1ED24F930042F833 /* Build configuration list for PBXProject "Giraffe_Theory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF8A41E1ED24F940042F833 /* Debug */,
+				1AF8A41F1ED24F940042F833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AF8A4201ED24F940042F833 /* Build configuration list for PBXNativeTarget "Giraffe_Theory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF8A4211ED24F940042F833 /* Debug */,
+				1AF8A4221ED24F940042F833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1AF8A4231ED24F940042F833 /* Build configuration list for PBXNativeTarget "Giraffe_TheoryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF8A4241ED24F940042F833 /* Debug */,
+				1AF8A4251ED24F940042F833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1AF8A4261ED24F940042F833 /* Build configuration list for PBXNativeTarget "Giraffe_TheoryUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AF8A4271ED24F940042F833 /* Debug */,
+				1AF8A4281ED24F940042F833 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1AF8A3EA1ED24F930042F833 /* Project object */;
+}
