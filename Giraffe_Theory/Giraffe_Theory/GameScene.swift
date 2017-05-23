@@ -12,8 +12,9 @@ import GameplayKit
 // General Level class containing data members and functions that any level would have
 class GameScene: SKScene {
     // Default variables, not sure what they're for other than initialization
-    private var label : SKLabelNode?
-    private var spinnyNode : SKShapeNode?
+    //private var label : SKLabelNode?
+    //private var spinnyNode : SKShapeNode?
+    
     // Number of Giraffes the player will be allowed to use
     private var numGiraffes : Int = 0
     // An array of arrays of doubles which contain the positions for nodes that will be initialized at the beginning of the level.
@@ -24,17 +25,15 @@ class GameScene: SKScene {
     var stars : Int = 0
     
     
+    
 
     
     
 
-    //Everything Below was written as default code. May be useful, but we will likely delete
-//    private var label : SKLabelNode?
-//    private var spinnyNode : SKShapeNode?
     
     //Everything Below was written as default code. May be useful, but we will likely delete
     
-//    override func didMove(to view: SKView) {
+    override func didMove(to view: SKView) {
 //        
 //        // Get label node from scene and store it for use later
 //        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
@@ -55,7 +54,7 @@ class GameScene: SKScene {
 //                                              SKAction.fadeOut(withDuration: 0.5),
 //                                              SKAction.removeFromParent()]))
 //        }
-//    }
+    }
     
     
 //    func touchDown(atPoint pos : CGPoint) {
@@ -102,8 +101,8 @@ class GameScene: SKScene {
 //        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
 //    }
 //    
-//    
-//    override func update(_ currentTime: TimeInterval) {
-//        // Called before each frame is rendered
-//    }
+    
+    override func update(_ currentTime: TimeInterval) {
+        // Called before each frame is rendered
+    }
 }
