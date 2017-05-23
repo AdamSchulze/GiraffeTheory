@@ -13,12 +13,12 @@ class StartScene: SKScene {
     var playButton: SKNode = PlayButtonNode
     var tutorialButton : SKNode = TutorialNode
     
-    override func didMoveToView(view: SKView) {
+    func didMoveToView(to view: SKView) {
         self.addChild(playButton)
         self.addChild(tutorialButton)
     }
     
-    override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
+    func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         // Loop over all the touches in this event
         for touch: AnyObject in touches {
             // Get the location of the touch in this scene
