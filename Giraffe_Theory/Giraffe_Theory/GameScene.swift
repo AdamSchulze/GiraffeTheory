@@ -34,6 +34,7 @@ class GameScene: SKScene {
     //Everything Below was written as default code. May be useful, but we will likely delete
     
     override func didMove(to view: SKView) {
+
 //        
 //        // Get label node from scene and store it for use later
 //        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode

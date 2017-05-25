@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Giraffe_Theory/StartMenu.swift"
+            timestampString = "517372891.439406"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
+            landmarkName = "menuScene"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Giraffe_Theory.menuScene.__deallocating_deinit"
+                  moduleName = "Giraffe_Theory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AdamSchulze/Desktop/Developer/GiraffeTheory/Giraffe_Theory/Giraffe_Theory/StartMenu.swift"
+                  timestampString = "517378883.197421"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Giraffe_Theory.menuScene.init (size : __C.CGSize) -&gt; Giraffe_Theory.menuScene"
+                  moduleName = "Giraffe_Theory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AdamSchulze/Desktop/Developer/GiraffeTheory/Giraffe_Theory/Giraffe_Theory/StartMenu.swift"
+                  timestampString = "517378883.20217"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "22">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Giraffe_Theory.menuScene.__allocating_init (size : __C.CGSize) -&gt; Giraffe_Theory.menuScene"
+                  moduleName = "Giraffe_Theory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AdamSchulze/Desktop/Developer/GiraffeTheory/Giraffe_Theory/Giraffe_Theory/StartMenu.swift"
+                  timestampString = "517378883.207079"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Giraffe_Theory.menuScene.init () -&gt; Giraffe_Theory.menuScene"
+                  moduleName = "Giraffe_Theory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AdamSchulze/Desktop/Developer/GiraffeTheory/Giraffe_Theory/Giraffe_Theory/StartMenu.swift"
+                  timestampString = "517378883.211602"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Giraffe_Theory.menuScene.__allocating_init () -&gt; Giraffe_Theory.menuScene"
+                  moduleName = "Giraffe_Theory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AdamSchulze/Desktop/Developer/GiraffeTheory/Giraffe_Theory/Giraffe_Theory/StartMenu.swift"
+                  timestampString = "517378883.217103"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Giraffe_Theory.menuScene.__allocating_init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Giraffe_Theory.menuScene&gt;"
+                  moduleName = "Giraffe_Theory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AdamSchulze/Desktop/Developer/GiraffeTheory/Giraffe_Theory/Giraffe_Theory/StartMenu.swift"
+                  timestampString = "517378883.222018"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Giraffe_Theory.menuScene.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;Giraffe_Theory.menuScene&gt;"
+                  moduleName = "Giraffe_Theory"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/AdamSchulze/Desktop/Developer/GiraffeTheory/Giraffe_Theory/Giraffe_Theory/StartMenu.swift"
+                  timestampString = "517378883.226205"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Giraffe_Theory/StartMenu.swift"
+            timestampString = "517374148.912304"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "touchesEnded(_:with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
