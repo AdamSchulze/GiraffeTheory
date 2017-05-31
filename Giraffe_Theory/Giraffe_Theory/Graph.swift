@@ -16,24 +16,24 @@ class Graph {
     
     // The node struct might not be necessary in this file.
     /*struct Node {
-        var position : (Int, Int)!  // Position, in (x, y) pixels of the Node
+        var position: (Int, Int)!  // Position, in (x, y) pixels of the Node
         // TODO: add more fields
         
         // Three possible constructors for a Node
         init() {
             position = (0, 0)
         }
-        init(x : Int, y : Int) {
+        init(x: Int, y: Int) {
             position = (x, y)
         }
-        init(otherpos : (Int, Int)) {
+        init(otherpos: (Int, Int)) {
             position = otherpos
         }
     }*/
     
     //MARK: member variables
     
-    private var size : Int!    // Graph size is initialized upon object creation.
+    private var size: Int!    // Graph size is initialized upon object creation.
     
     /*
      *  The graphs are implemented as an adjacency matrix.
@@ -56,7 +56,7 @@ class Graph {
      *  Initializes a graph based on size.
      *  Initilizes all values in the matrix to nil (no edges exist yet).
      */
-    init(size : Int) {
+    init(size: Int) {
         self.size = size
         for i in 0..<size {
             for j in 0..<size {
@@ -72,7 +72,7 @@ class Graph {
      *  Edges are input as an array of an (Int, Int, Double) tuple.
      *  The start node is the first Int, the end node is the second Int, and the weight is the Double.
      */
-    init(size : Int, initialEdges : [(Int, Int, Double)]) {
+    init(size: Int, initialEdges: [(Int, Int, Double)]) {
         self.size = size
         for i in 0..<size {
             for j in 0..<size {
@@ -92,7 +92,7 @@ class Graph {
      *  @params Ints begin and end, indices of the beginning and ending nodes, respectively.
      *  @return true if there is an edge connecting begin and end, false otherwise.
      */
-    func canTravel(begin : Int, end : Int) -> Bool {
+    func canTravel(begin: Int, end: Int) -> Bool {
         
         // Returns false if begin or end are out of range
         if begin > size || end > size {
@@ -107,7 +107,7 @@ class Graph {
      *  A function that adds an edge of a certain weight between two nodes.
      *  @params Ints begin and end, the beginning and ending nodes, and double weight, the weight of the edge to add.
      */
-    func addEdge(begin : Int, end : Int, weight : Double) {
+    func addEdge(begin: Int, end: Int, weight: Double) {
         
         // Exits if begin or end are out of range
         if begin > size || end > size {
@@ -115,6 +115,37 @@ class Graph {
         }
         
         matrix[begin][end] = weight
+    }
+    
+    /*
+     *  Removes the edge between two nodes. Obeys directionality.
+     *  @params Int begin and Int end, beginning and ending nodes, respectively.
+     */
+    func removeEdge(begin: Int, end: Int) {
+        if begin <= size && end <= size {
+            matrix[begin][end] = nil
+        }
+    }
+    
+    /*
+     *  A function to find the smallest edge weight from a given node.
+     *  @param Int, the index of the node.
+     *  @returns A Double, the weight of the smallest edge originating from the node, or nil if there are no edges.
+     */
+    func findMinEdgeWeight(node: Int) -> Double? {
+        if node > size {
+            return nil
+        }
+        var min: Double! = nil
+        for i in 0..<size {
+            if min != nil && matrix[node][i] != nil {
+                min = matrix[node][i]
+            }
+            else if matrix[node][i] != nil && (matrix[node][i]?.isLess(than: min))! {
+                min = matrix[node][i]
+            }
+        }
+        return min
     }
     
     func addNode() {    // Not sure if this one is necessary for us?
