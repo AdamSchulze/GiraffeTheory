@@ -21,6 +21,8 @@
 		1AF8A4061ED24F930042F833 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A4041ED24F930042F833 /* LaunchScreen.storyboard */; };
 		1AF8A4111ED24F930042F833 /* Giraffe_TheoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A4101ED24F930042F833 /* Giraffe_TheoryTests.swift */; };
 		1AF8A41C1ED24F940042F833 /* Giraffe_TheoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A41B1ED24F940042F833 /* Giraffe_TheoryUITests.swift */; };
+		CF44AD6E1EDE4D9B00D42E80 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF44AD6D1EDE4D9B00D42E80 /* Graph.swift */; };
+		CF44AD701EDE71DE00D42E80 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF44AD6F1EDE71DE00D42E80 /* Level.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		1AF8A4171ED24F940042F833 /* Giraffe_TheoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Giraffe_TheoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF8A41B1ED24F940042F833 /* Giraffe_TheoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giraffe_TheoryUITests.swift; sourceTree = "<group>"; };
 		1AF8A41D1ED24F940042F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF44AD6D1EDE4D9B00D42E80 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
+		CF44AD6F1EDE71DE00D42E80 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +136,8 @@
 				1AF8A4021ED24F930042F833 /* Assets.xcassets */,
 				1AF8A4041ED24F930042F833 /* LaunchScreen.storyboard */,
 				1AF8A4071ED24F930042F833 /* Info.plist */,
+				CF44AD6D1EDE4D9B00D42E80 /* Graph.swift */,
+				CF44AD6F1EDE71DE00D42E80 /* Level.swift */,
 			);
 			path = Giraffe_Theory;
 			sourceTree = "<group>";
@@ -292,6 +298,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF44AD6E1EDE4D9B00D42E80 /* Graph.swift in Sources */,
+				CF44AD701EDE71DE00D42E80 /* Level.swift in Sources */,
 				1AF8A3FC1ED24F930042F833 /* GameScene.swift in Sources */,
 				1A0610961ED3D5D4005276FF /* StartMenu.swift in Sources */,
 				1A24ACD61ED69206001D2ECA /* LevelSelect.swift in Sources */,
