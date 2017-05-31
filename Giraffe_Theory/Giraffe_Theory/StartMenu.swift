@@ -26,7 +26,7 @@ class StartMenu: SKScene {
     }
     
     
-    /*override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         //print("TouchesBegan")
         if let touch = touches.first {
             // If there is already a button selected, reset all buttons to unpressed
@@ -47,9 +47,9 @@ class StartMenu: SKScene {
                 handleTutorialButtonHover(isHovering: true)
             }
         }
-    }*/
+    }
     
-    /*override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         
         if let touch = touches.first {
@@ -61,7 +61,7 @@ class StartMenu: SKScene {
                 handleTutorialButtonHover(isHovering: (tutorialButton.contains(touch.location(in: self))))
             }
         }
-    }*/
+    }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
@@ -77,7 +77,7 @@ class StartMenu: SKScene {
             // do tutorial things
         }
         
-        /*if let touch = touches.first {
+        if let touch = touches.first {
             
             if selectedButton == playButton {
                 // play button clicked
@@ -95,7 +95,7 @@ class StartMenu: SKScene {
                     handleTutorialButtonClick()
                 }
             }
-        }*/
+        }
         
         selectedButton = nil
     }
