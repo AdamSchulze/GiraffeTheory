@@ -9,7 +9,8 @@ import SpriteKit
 import GameplayKit
 import Foundation
 
-class menuScene: SKScene {
+class StartMenu: SKScene {
+    
     var playButton: SKSpriteNode! = nil
     var tutorialButton: SKSpriteNode! = nil
     var selectedButton: SKSpriteNode?
@@ -19,11 +20,14 @@ class menuScene: SKScene {
 //        addChild(tutorialButton)
         playButton = self.childNode(withName: "PlayButtonNode") as? SKSpriteNode
         tutorialButton = self.childNode(withName: "TutorialButtonNode") as? SKSpriteNode
+        print("playButton and tutorialButton initialized")
+        //self.addChild(playButton)
+        //self.addChild(tutorialButton)
     }
     
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("TouchesBegan")
+    /*override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        //print("TouchesBegan")
         if let touch = touches.first {
             // If there is already a button selected, reset all buttons to unpressed
             if selectedButton != nil {
@@ -43,8 +47,11 @@ class menuScene: SKScene {
                 handleTutorialButtonHover(isHovering: true)
             }
         }
-    }
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+    }*/
+    
+    /*override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        
         if let touch = touches.first {
             
             // Check which button was clicked (if any)
@@ -54,10 +61,23 @@ class menuScene: SKScene {
                 handleTutorialButtonHover(isHovering: (tutorialButton.contains(touch.location(in: self))))
             }
         }
-    }
+    }*/
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if let touch = touches.first {
+        
+        print("beign of touches ended function")
+        let touch = touches.first
+        let touchLocation = touch!.location(in: self)
+        if playButton.contains(touchLocation) {
+            print("play button pressed!")
+            // do playbutton things
+        }
+        else if tutorialButton.contains(touchLocation) {
+            print("tutorial button pressed!")
+            // do tutorial things
+        }
+        
+        /*if let touch = touches.first {
             
             if selectedButton == playButton {
                 // play button clicked
@@ -75,7 +95,7 @@ class menuScene: SKScene {
                     handleTutorialButtonClick()
                 }
             }
-        }
+        }*/
         
         selectedButton = nil
     }
