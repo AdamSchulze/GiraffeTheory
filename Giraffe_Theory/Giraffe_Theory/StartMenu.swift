@@ -15,40 +15,46 @@ class menuScene: SKScene {
     var selectedButton: SKSpriteNode?
     
     override func didMove(to view: SKView) {
+//        addChild(playButton)
+//        addChild(tutorialButton)
         playButton = self.childNode(withName: "PlayButtonNode") as? SKSpriteNode
         tutorialButton = self.childNode(withName: "TutorialButtonNode") as? SKSpriteNode
     }
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        print("TouchesBegan")
         if let touch = touches.first {
             // If there is already a button selected, reset all buttons to unpressed
             if selectedButton != nil {
+                print("resetting all touches")
                 handlePlayButtonHover(isHovering: false)
                 handleTutorialButtonHover(isHovering: false)
             }
             
             // Check which button was clicked (if any)
             if playButton.contains(touch.location(in: self)) {
+                print("playbutton touched")
                 selectedButton = playButton
                 handlePlayButtonHover(isHovering: true)
             } else if tutorialButton.contains(touch.location(in: self)) {
+                print("tutorialButton touched")
                 selectedButton = tutorialButton
                 handleTutorialButtonHover(isHovering: true)
             }
         }
     }
-//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        if let touch = touches.first {
-//            
-//            // Check which button was clicked (if any)
-//            if selectedButton == playButton {
-//                handlePlayButtonHover(isHovering: (playButton.contains(touch.location(in: self))))
-//            } else if selectedButton == tutorialButton {
-//                handleTutorialButtonHover(isHovering: (tutorialButton.contains(touch.location(in: self))))
-//            }
-//        }
-//    }
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            
+            // Check which button was clicked (if any)
+            if selectedButton == playButton {
+                handlePlayButtonHover(isHovering: (playButton.contains(touch.location(in: self))))
+            } else if selectedButton == tutorialButton {
+                handleTutorialButtonHover(isHovering: (tutorialButton.contains(touch.location(in: self))))
+            }
+        }
+    }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
@@ -101,7 +107,7 @@ class menuScene: SKScene {
         let transition = SKTransition.reveal(with: .down, duration: 0.75)
         let nextScene = GameScene(fileNamed: "LevelSelect")
         nextScene?.scaleMode = scaleMode
-        scene?.view?.presentScene(nextScene!, transition: transition)
+        view?.presentScene(nextScene!, transition: transition)
     }
     
     func handleTutorialButtonClick() {
