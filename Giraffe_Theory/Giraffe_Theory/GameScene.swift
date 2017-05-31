@@ -25,7 +25,7 @@ class GameScene: SKScene {
     var stars : Int = 0
     
     
-    
+    private var gameGraph : Graph!
 
     
     
