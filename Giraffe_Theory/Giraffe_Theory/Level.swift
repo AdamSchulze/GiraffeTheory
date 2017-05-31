@@ -28,7 +28,7 @@ class Level {
      *  but then LevelSelect.swift only has to interact with clean, Level objects rather than that whole mess.
      *  This Level object is then used to initialize each GameScene's Graph object.
      */
-    init(arrnodes : [(Int, Int)], arredges : [(Int, Int, Int)]/*, <victory conditions>*/) {
+    init(arrnodes : [(Int, Int)], arredges : [(Int, Int, Double)]/*, <victory conditions>*/) {
         // I'm not sure if we have to worry about shallow copy vs deep copy or if that's a problem with swift?
         startingNodes = arrnodes
         startingEdges = arredges
@@ -38,7 +38,7 @@ class Level {
         return startingNodes
     }
     
-    func getStartingEdges() -> [(Int, Int, Int)] {
+    func getStartingEdges() -> [(Int, Int, Double)] {
         return startingEdges
     }
     
