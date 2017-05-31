@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0610941ED3D596005276FF /* StartMenu.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1A0610931ED3D596005276FF /* StartMenu.sks */; };
+		1A0610961ED3D5D4005276FF /* StartMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0610951ED3D5D4005276FF /* StartMenu.swift */; };
+		1A24ACD61ED69206001D2ECA /* LevelSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24ACD51ED69206001D2ECA /* LevelSelect.swift */; };
+		1A24ACD81ED6921C001D2ECA /* LevelSelect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1A24ACD71ED6921C001D2ECA /* LevelSelect.sks */; };
 		1AF8A3F61ED24F930042F833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F51ED24F930042F833 /* AppDelegate.swift */; };
 		1AF8A3F81ED24F930042F833 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F71ED24F930042F833 /* GameScene.sks */; };
 		1AF8A3FA1ED24F930042F833 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F91ED24F930042F833 /* Actions.sks */; };
@@ -37,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0610931ED3D596005276FF /* StartMenu.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = StartMenu.sks; sourceTree = "<group>"; };
+		1A0610951ED3D5D4005276FF /* StartMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartMenu.swift; sourceTree = "<group>"; };
+		1A24ACD51ED69206001D2ECA /* LevelSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelect.swift; sourceTree = "<group>"; };
+		1A24ACD71ED6921C001D2ECA /* LevelSelect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelSelect.sks; sourceTree = "<group>"; };
 		1AF8A3F21ED24F930042F833 /* Giraffe_Theory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giraffe_Theory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF8A3F51ED24F930042F833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AF8A3F71ED24F930042F833 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -80,6 +88,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AB7AA101EDE455B00E268D8 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				1AF8A3F71ED24F930042F833 /* GameScene.sks */,
+				1AF8A3FB1ED24F930042F833 /* GameScene.swift */,
+				1A24ACD51ED69206001D2ECA /* LevelSelect.swift */,
+				1A24ACD71ED6921C001D2ECA /* LevelSelect.sks */,
+				1A0610931ED3D596005276FF /* StartMenu.sks */,
+				1A0610951ED3D5D4005276FF /* StartMenu.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
 		1AF8A3E91ED24F930042F833 = {
 			isa = PBXGroup;
 			children = (
@@ -104,9 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				1AF8A3F51ED24F930042F833 /* AppDelegate.swift */,
-				1AF8A3F71ED24F930042F833 /* GameScene.sks */,
 				1AF8A3F91ED24F930042F833 /* Actions.sks */,
-				1AF8A3FB1ED24F930042F833 /* GameScene.swift */,
+				1AB7AA101EDE455B00E268D8 /* Scenes */,
 				1AF8A3FD1ED24F930042F833 /* GameViewController.swift */,
 				1AF8A3FF1ED24F930042F833 /* Main.storyboard */,
 				1AF8A4021ED24F930042F833 /* Assets.xcassets */,
@@ -242,9 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AF8A4011ED24F930042F833 /* Main.storyboard in Resources */,
+				1A0610941ED3D596005276FF /* StartMenu.sks in Resources */,
 				1AF8A3F81ED24F930042F833 /* GameScene.sks in Resources */,
 				1AF8A4031ED24F930042F833 /* Assets.xcassets in Resources */,
 				1AF8A4061ED24F930042F833 /* LaunchScreen.storyboard in Resources */,
+				1A24ACD81ED6921C001D2ECA /* LevelSelect.sks in Resources */,
 				1AF8A3FA1ED24F930042F833 /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +293,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1AF8A3FC1ED24F930042F833 /* GameScene.swift in Sources */,
+				1A0610961ED3D5D4005276FF /* StartMenu.swift in Sources */,
+				1A24ACD61ED69206001D2ECA /* LevelSelect.swift in Sources */,
 				1AF8A3FE1ED24F930042F833 /* GameViewController.swift in Sources */,
 				1AF8A3F61ED24F930042F833 /* AppDelegate.swift in Sources */,
 			);
@@ -519,6 +543,7 @@
 				1AF8A4221ED24F940042F833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AF8A4231ED24F940042F833 /* Build configuration list for PBXNativeTarget "Giraffe_TheoryTests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +552,7 @@
 				1AF8A4251ED24F940042F833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AF8A4261ED24F940042F833 /* Build configuration list for PBXNativeTarget "Giraffe_TheoryUITests" */ = {
 			isa = XCConfigurationList;
@@ -535,6 +561,7 @@
 				1AF8A4281ED24F940042F833 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
