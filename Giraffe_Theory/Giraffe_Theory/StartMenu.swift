@@ -16,18 +16,13 @@ class StartMenu: SKScene {
     var selectedButton: SKSpriteNode?
     
     override func didMove(to view: SKView) {
-//        addChild(playButton)
-//        addChild(tutorialButton)
         playButton = self.childNode(withName: "PlayButtonNode") as? SKSpriteNode
         tutorialButton = self.childNode(withName: "TutorialButtonNode") as? SKSpriteNode
         print("playButton and tutorialButton initialized")
-        //self.addChild(playButton)
-        //self.addChild(tutorialButton)
     }
     
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        //print("TouchesBegan")
         if let touch = touches.first {
             // If there is already a button selected, reset all buttons to unpressed
             if selectedButton != nil {
@@ -64,18 +59,6 @@ class StartMenu: SKScene {
     }
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        
-        print("beign of touches ended function")
-        let touch = touches.first
-        let touchLocation = touch!.location(in: self)
-        if playButton.contains(touchLocation) {
-            print("play button pressed!")
-            // do playbutton things
-        }
-        else if tutorialButton.contains(touchLocation) {
-            print("tutorial button pressed!")
-            // do tutorial things
-        }
         
         if let touch = touches.first {
             
