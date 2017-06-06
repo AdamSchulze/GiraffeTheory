@@ -31,6 +31,14 @@ class Level {
     // start and end are the indexes of the corresponding elements in startingNodes
     private let startingEdges : [(Int, Int, Double)]
     
+    
+    
+    
+    //Do we need lists of giraffe heads? We have bodies (nodes) and necks (edges)
+    
+    
+    
+    
     // I'm still unclear how to store a general case for victory conditions, but we'll figure it out eventually.
     
     /* 
@@ -44,7 +52,7 @@ class Level {
         startingEdges = arredges
     }
     
-    func getStartingNodes() -> [(Int, Int)] {
+    func getStartingNodes() -> [(Float, Float)] {
         return startingNodes
     }
     
@@ -62,32 +70,33 @@ class Level {
      * Output: True if there is a giraffe node at specified coordinates, false otherwise
      */
     func isGiraffe(touchLocation: CGPoint) -> Bool {
-        return startingNodes.contains(where: ((touchLocation.x,touchLocation)) throws -> Bool)
+        return startingNodes.contains(where: ((touchLocation.x,touchLocation.y)) throws -> Bool)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
             // If there is already a button selected, reset all buttons to unpressed
             if selectedButton != nil {
-                
+//                handleMenuButtonHover(isHovering: false)
+//                handleRunButtonHover(isHovering: false)
             }
             
             // Check what was clicked
             // These conditionals are placeholder statements
             
-            // Pause Menu
             if menuButton.contains(touch.location(in: self)) {
                 selectedButton = menuButton
                 //handleMenuButtonHover(isHovering: true)
                 
             
-            } // Run Button
-            else if runButton.contains(touch.location(in: self)) {
+            } else if runButton.contains(touch.location(in: self)) {
+                selectedButton = runButton
+                //handleRunButtonHover(isHovering: true)
                 
-            } // Giraffe Button
-            else if giraffe.contains(touch.location(in: self)){
-                //Check if touch location is in the array of nodes
-                // Conditional syntax will likely be different, depends on how nodes work
+            } else if isGiraffe(touchLocation: location(in: touch)){
+                // conditional syntax may be incorrect
+                // selectedButton = currently selected giraffe node
+                //create a new giraffe head and neck
             }
             
         }
@@ -101,8 +110,8 @@ class Level {
                 //handlePlayButtonHover(isHovering: (playButton.contains(touch.location(in: self))))
             } else if selectedButton == runButton {
                 //handleTutorialButtonHover(isHovering: (tutorialButton.contains(touch.location(in: self))))
-            } else if //hovering over a node{
-                // If a node was touched, extend an edge (giraffe neck) from that node
+            } else if isGiraffe(touchLocation: location(in: touch)) {
+                //extend giraffe neck as the giraffe head follows the touch
             }
         }
     }
@@ -112,7 +121,7 @@ class Level {
         if let touch = touches.first {
         
             if selectedButton == menuButton {
-                handlePlayButtonHover(isHovering: false)
+                handleMenuButtonHover(isHovering: false)
                 
                 if (menuButton.contains(touch.location(in: self))) {
                     handleMenuButtonClick()
@@ -125,7 +134,7 @@ class Level {
                 if (runButton.contains(touch.location(in: self))) {
                     handleRunButtonClick()
                 }
-            } else if // touches a new node {
+            } else if /* touches a new node */ {
                 // add edge to edgelist (and update the graphics accordingly)
             }
             
