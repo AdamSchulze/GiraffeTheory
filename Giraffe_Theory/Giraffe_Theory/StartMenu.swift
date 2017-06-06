@@ -26,21 +26,19 @@ class StartMenu: SKScene {
         if let touch = touches.first {
             // If there is already a button selected, reset all buttons to unpressed
             if selectedButton != nil {
-                print("resetting all touches")
                 handlePlayButtonHover(isHovering: false)
                 handleTutorialButtonHover(isHovering: false)
             }
             
             // Check which button was clicked (if any)
             if playButton.contains(touch.location(in: self)) {
-                print("playbutton touched")
                 selectedButton = playButton
                 handlePlayButtonHover(isHovering: true)
             } else if tutorialButton.contains(touch.location(in: self)) {
-                print("tutorialButton touched")
                 selectedButton = tutorialButton
                 handleTutorialButtonHover(isHovering: true)
             }
+            
         }
     }
     
@@ -106,7 +104,6 @@ class StartMenu: SKScene {
     }
     
     func handlePlayButtonClick() {
-        print("Play Button Clicked")
         let transition = SKTransition.reveal(with: .down, duration: 0.75)
         let nextScene = GameScene(fileNamed: "LevelSelect")
         nextScene?.scaleMode = scaleMode

@@ -23,11 +23,12 @@ class Level {
     
     var selectedButton: SKSpriteNode? //Keeps track of the currently selected button/node
     
-    private let startingNodes : [(Int, Int)]    // Nodes represented by an array of integer tuples
+    private let startingNodes : [(Float, Float)]    // Nodes represented by an array of integer tuples
     // Exactly how the onscreen position of the nodes will be represented and stored, I don't know
     // That's why this is an integer tuple intitially, it's subject to change.
     
     // Stores the starting edges as an integer tuple of (start, end, weight)
+    // start and end are the indexes of the corresponding elements in startingNodes
     private let startingEdges : [(Int, Int, Double)]
     
     // I'm still unclear how to store a general case for victory conditions, but we'll figure it out eventually.
@@ -53,6 +54,15 @@ class Level {
     
     func getInitialSize() -> Int {
         return startingNodes.count
+    }
+    
+    /*
+     * Helper Function to determine if user has touched a giraffe node
+     * Input: CGPoint containing coordinates of a touch
+     * Output: True if there is a giraffe node at specified coordinates, false otherwise
+     */
+    func isGiraffe(touchLocation: CGPoint) -> Bool {
+        return startingNodes.contains(where: ((touchLocation.x,touchLocation)) throws -> Bool)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
