@@ -34,10 +34,6 @@ class Level {
     
     
     
-    //Do we need lists of giraffe heads? We have bodies (nodes) and necks (edges)
-    
-    
-    
     
     // I'm still unclear how to store a general case for victory conditions, but we'll figure it out eventually.
     
@@ -52,11 +48,11 @@ class Level {
         startingEdges = arredges
     }
     
-    func getStartingNodes() -> [(Float, Float)] {
+    func getStartingNodes() -> [(Float, Float, SKSpriteNode)] {
         return startingNodes
     }
     
-    func getStartingEdges() -> [(Int, Int, Double)] {
+    func getStartingEdges() -> [(Int, Int, Double, SKSpriteNode)] {
         return startingEdges
     }
     
