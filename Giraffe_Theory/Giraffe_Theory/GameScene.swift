@@ -18,9 +18,11 @@ class GameScene: SKScene {
     // Number of Giraffes the player will be allowed to use
     private var numGiraffes : Int = 0
     // An array of arrays of doubles which contain the positions for nodes that will be initialized at the beginning of the level.
-    private var startNodes : [[Double]] = []
-    // An array of ints that correspond to an indexes in startNodes, giving us an array of edges that will be initialized at the beginning of the level.
-    private var startEdges : [Int] = []
+//    private var startNodes : [[Double]] = []
+//    // An array of ints that correspond to an indexes in startNodes, giving us an array of edges that will be initialized at the beginning of the level.
+//    private var startEdges : [Int] = []
+    
+    
     // The player's score (out of 3 stars). The level will only advance if the player has at least one star.
     var stars : Int = 0
     
@@ -28,80 +30,95 @@ class GameScene: SKScene {
     private var gameGraph : Graph!
 
     
+    var selectedButton: SKSpriteNode? //Keeps track of the currently selected button/node
     
 
     
     //Everything Below was written as default code. May be useful, but we will likely delete
     
     override func didMove(to view: SKView) {
-
-//        
-//        // Get label node from scene and store it for use later
-//        self.label = self.childNode(withName: "//helloLabel") as? SKLabelNode
-//        if let label = self.label {
-//            label.alpha = 0.0
-//            label.run(SKAction.fadeIn(withDuration: 2.0))
-//        }
-//        
-//        // Create shape node to use during mouse interaction
-//        let w = (self.size.width + self.size.height) * 0.05
-//        self.spinnyNode = SKShapeNode.init(rectOf: CGSize.init(width: w, height: w), cornerRadius: w * 0.3)
-//        
-//        if let spinnyNode = self.spinnyNode {
-//            spinnyNode.lineWidth = 2.5
-//            
-//            spinnyNode.run(SKAction.repeatForever(SKAction.rotate(byAngle: CGFloat(Double.pi), duration: 1)))
-//            spinnyNode.run(SKAction.sequence([SKAction.wait(forDuration: 0.5),
-//                                              SKAction.fadeOut(withDuration: 0.5),
-//                                              SKAction.removeFromParent()]))
-//        }
+        
     }
     
     
-//    func touchDown(atPoint pos : CGPoint) {
-//        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-//            n.position = pos
-//            n.strokeColor = SKColor.green
-//            self.addChild(n)
-//        }
-//    }
-//    
-//    func touchMoved(toPoint pos : CGPoint) {
-//        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-//            n.position = pos
-//            n.strokeColor = SKColor.blue
-//            self.addChild(n)
-//        }
-//    }
-//    
-//    func touchUp(atPoint pos : CGPoint) {
-//        if let n = self.spinnyNode?.copy() as! SKShapeNode? {
-//            n.position = pos
-//            n.strokeColor = SKColor.red
-//            self.addChild(n)
-//        }
-//    }
-//    
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        if let label = self.label {
-//            label.run(SKAction.init(named: "Pulse")!, withKey: "fadeInOut")
-//        }
-//        
-//        for t in touches { self.touchDown(atPoint: t.location(in: self)) }
-//    }
-//    
-//    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        for t in touches { self.touchMoved(toPoint: t.location(in: self)) }
-//    }
-//    
-//    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-//    }
-//    
-//    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        for t in touches { self.touchUp(atPoint: t.location(in: self)) }
-//    }
-//    
+    /*
+     * Helper Function to determine if user has touched a giraffe node
+     * Input: CGPoint containing coordinates of a touch
+     * Output: True if there is a giraffe node at specified coordinates, false otherwise
+     */
+    func isGiraffe(touchLocation: CGPoint) -> Bool {
+        return startingNodes.contains(where: ((touchLocation.x,touchLocation.y)) throws -> Bool)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            // If there is already a button selected, reset all buttons to unpressed
+            if selectedButton != nil {
+                //                handleMenuButtonHover(isHovering: false)
+                //                handleRunButtonHover(isHovering: false)
+            }
+            
+            // Check what was clicked
+            // These conditionals are placeholder statements
+            
+            if menuButton.contains(touch.location(in: self)) {
+                selectedButton = menuButton
+                //handleMenuButtonHover(isHovering: true)
+                
+                
+            } else if runButton.contains(touch.location(in: self)) {
+                selectedButton = runButton
+                //handleRunButtonHover(isHovering: true)
+                
+            } else if isGiraffe(touchLocation: location(in: touch)){
+                // conditional syntax may be incorrect
+                // selectedButton = currently selected giraffe node
+                //create a new giraffe head and neck
+            }
+            
+        }
+    }
+    
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            
+            // Check which button was clicked (if any)
+            if selectedButton == menuButton {
+                //handlePlayButtonHover(isHovering: (playButton.contains(touch.location(in: self))))
+            } else if selectedButton == runButton {
+                //handleTutorialButtonHover(isHovering: (tutorialButton.contains(touch.location(in: self))))
+            } else if isGiraffe(touchLocation: location(in: touch)) {
+                //extend giraffe neck as the giraffe head follows the touch
+            }
+        }
+    }
+    
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if let touch = touches.first {
+            
+            if selectedButton == menuButton {
+                handleMenuButtonHover(isHovering: false)
+                
+                if (menuButton.contains(touch.location(in: self))) {
+                    handleMenuButtonClick()
+                }
+                
+            } else if selectedButton == runButton {
+                // tutorial button clicked
+                handleRunButtonHover(isHovering: false)
+                
+                if (runButton.contains(touch.location(in: self))) {
+                    handleRunButtonClick()
+                }
+            } else if /* touches a new node */ {
+                // add edge to edgelist (and update the graphics accordingly)
+            }
+            
+        }
+        
+        selectedButton = nil
+    }
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
