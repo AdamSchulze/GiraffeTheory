@@ -7,8 +7,13 @@
 //
 
 import Foundation
+import SpriteKit
 
-//class menuScene: SKScene {
-//
-//    var selectedButton: SKSpriteNode?
-//}
+class LevelSelect: SKScene {
+    
+    private var levels = [Level]()
+    
+    func getLevel(selected: Int) -> Level {
+        return levels[selected]
+    }
+}
