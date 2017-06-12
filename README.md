@@ -1,4 +1,4 @@
 # GiraffeTheory
 
-Giraffe-themed Puzzle Game that utilizes basic graph theory
+Giraffe-themed Puzzle Game that utilizes graph theory
 
