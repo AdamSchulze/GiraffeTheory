@@ -11,9 +11,9 @@ import GameplayKit
 
 // General Level class containing data members and functions that any level would have
 class GameScene: SKScene {
-    // Default variables, not sure what they're for other than initialization
-    //private var label : SKLabelNode?
-    //private var spinnyNode : SKShapeNode?
+    var menuButton: SKSpriteNode! = nil
+    
+    var runButton: SKSpriteNode! = nil
     
     // Number of Giraffes the player will be allowed to use
     private var numGiraffes : Int = 0
@@ -22,6 +22,7 @@ class GameScene: SKScene {
 //    // An array of ints that correspond to an indexes in startNodes, giving us an array of edges that will be initialized at the beginning of the level.
 //    private var startEdges : [Int] = []
     
+    var spriteArray: [SKSpriteNode] = [SKSpriteNode]()
     
     // The player's score (out of 3 stars). The level will only advance if the player has at least one star.
     var stars : Int = 0

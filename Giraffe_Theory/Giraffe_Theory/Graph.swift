@@ -7,7 +7,7 @@
 //
 
 import Foundation   // I'm actualy not sure what this does.
-
+import SpriteKit
 
 // This class is for implementing the actual graphs. It's the underlying data structure of the game.
 // Each level should create a different graph object, and initialize different nodes.
@@ -34,6 +34,7 @@ class Graph {
     //MARK: member variables
     
     private var size: Int!    // Graph size is initialized upon object creation.
+    
     
     /*
      *  The graphs are implemented as an adjacency matrix.
