@@ -47,7 +47,7 @@ class GameScene: SKScene {
      * Input: CGPoint containing coordinates of a touch
      * Output: True if there is a giraffe node at specified coordinates, false otherwise
      */
-    func isGiraffe(touchLocation: CGPoint) -> Bool {
+/*    func isGiraffe(touchLocation: CGPoint) -> Bool {
         return startingNodes.contains(where: ((touchLocation.x,touchLocation.y)) throws -> Bool)
     }
     
@@ -124,4 +124,5 @@ class GameScene: SKScene {
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
+ */
 }
