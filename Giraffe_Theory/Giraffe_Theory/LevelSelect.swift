@@ -21,7 +21,6 @@ class LevelSelect: SKScene {
     
     override func didMove(to view: SKView) {
         print("Moved to LevelSelect.swift")
-        levelButtons.reserveCapacity(numLevels+1)
         for i in 1...numLevels {
             print(i)
             //levelButtons.append((self.childNode(withName: "Level" + "\(i)") as? SKSpriteNode)!)
