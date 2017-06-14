@@ -11,9 +11,9 @@ import GameplayKit
 
 // General Level class containing data members and functions that any level would have
 class GameScene: SKScene {
-    // Default variables, not sure what they're for other than initialization
-    //private var label : SKLabelNode?
-    //private var spinnyNode : SKShapeNode?
+    var menuButton: SKSpriteNode! = nil
+    
+    var runButton: SKSpriteNode! = nil
     
     // Number of Giraffes the player will be allowed to use
     private var numGiraffes : Int = 0
@@ -22,18 +22,19 @@ class GameScene: SKScene {
 //    // An array of ints that correspond to an indexes in startNodes, giving us an array of edges that will be initialized at the beginning of the level.
 //    private var startEdges : [Int] = []
     
+    var spriteArray: [SKSpriteNode] = [SKSpriteNode]()
     
     // The player's score (out of 3 stars). The level will only advance if the player has at least one star.
     var stars : Int = 0
     
-    
     private var gameGraph : Graph!
-    
-    
     
     var selectedButton: SKSpriteNode? //Keeps track of the currently selected button/node
     
-
+    // texture to be used for all giraffe heads
+    let giraffeHead = SKTexture(imageNamed: "giraffeHead")
+    
+    var endGiraffe: Int = 1
     
     //Everything Below was written as default code. May be useful, but we will likely delete
     
@@ -43,12 +44,19 @@ class GameScene: SKScene {
     
     
     /*
-     * Helper Function to determine if user has touched a giraffe node
+     * Helper Function to determine if user has touched a giraffe node.
+     * If so, it sets selectedButton to be the currently touched giraffe node
      * Input: CGPoint containing coordinates of a touch
      * Output: True if there is a giraffe node at specified coordinates, false otherwise
      */
-/*    func isGiraffe(touchLocation: CGPoint) -> Bool {
-        return startingNodes.contains(where: ((touchLocation.x,touchLocation.y)) throws -> Bool)
+    func isGiraffe(touchLocation: CGPoint) -> Bool {
+        for sprite in spriteArray {
+            if sprite.contains(touchLocation) {
+                selectedButton = sprite
+                return true
+            }
+        }
+        return false
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -71,10 +79,8 @@ class GameScene: SKScene {
                 selectedButton = runButton
                 //handleRunButtonHover(isHovering: true)
                 
-            } else if isGiraffe(touchLocation: location(in: touch)){
-                // conditional syntax may be incorrect
-                // selectedButton = currently selected giraffe node
-                //create a new giraffe head and neck
+            } else if isGiraffe(touchLocation: touch.location(in: self)){
+                newGiraffeHead = 
             }
             
         }
@@ -88,7 +94,7 @@ class GameScene: SKScene {
                 //handlePlayButtonHover(isHovering: (playButton.contains(touch.location(in: self))))
             } else if selectedButton == runButton {
                 //handleTutorialButtonHover(isHovering: (tutorialButton.contains(touch.location(in: self))))
-            } else if isGiraffe(touchLocation: location(in: touch)) {
+            } else if isGiraffe(touchLocation: touch.location(in: self)) {
                 //extend giraffe neck as the giraffe head follows the touch
             }
         }
@@ -112,7 +118,7 @@ class GameScene: SKScene {
                 if (runButton.contains(touch.location(in: self))) {
                     handleRunButtonClick()
                 }
-            } else if /* touches a new node */ {
+            } else if isGiraffe(touchLocation: touch.location(in: self)) {
                 // add edge to edgelist (and update the graphics accordingly)
             }
             
@@ -121,8 +127,40 @@ class GameScene: SKScene {
         selectedButton = nil
     }
     
+    
+    func handleMenuButtonHover(isHovering: Bool) {
+        //TODO: handle hovering textures
+    }
+    
+    func handleRunButtonHover(isHovering: Bool){
+        //TODO: handle hovering textures
+    }
+    
+    func handleMenuButtonClick() {
+        //TODO: bring up a new sprite/scene with the menu
+    }
+    
+    func handleRunButtonClick() {
+        //assumes squirrel is at start
+        var currentGiraffe = 0
+        var nextGiraffe = 1
+        while currentGiraffe != endGiraffe {
+            if nextGiraffe > endGiraffe {
+                print("Try Again!")
+                // display retry message
+            }
+            if gameGraph.canTravel(begin: currentGiraffe, end: nextGiraffe) {
+                // move the squirrel sprite
+                currentGiraffe = nextGiraffe
+                nextGiraffe = 1 //TODO: change if this makes unnecessary computations
+            }
+            nextGiraffe += 1
+        }
+        print("Congratulations")
+        //display victory message and calculate score
+    }
+    
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
- */
 }
