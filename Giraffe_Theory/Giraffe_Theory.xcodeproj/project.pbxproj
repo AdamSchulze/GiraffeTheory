@@ -11,7 +11,7 @@
 		1A0610961ED3D5D4005276FF /* StartMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0610951ED3D5D4005276FF /* StartMenu.swift */; };
 		1A24ACD61ED69206001D2ECA /* LevelSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24ACD51ED69206001D2ECA /* LevelSelect.swift */; };
 		1A24ACD81ED6921C001D2ECA /* LevelSelect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1A24ACD71ED6921C001D2ECA /* LevelSelect.sks */; };
-		1AA5893B1EE0F4F000F5EC7F /* Level0.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5893A1EE0F4F000F5EC7F /* Level0.swift */; };
+		1AA5893B1EE0F4F000F5EC7F /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5893A1EE0F4F000F5EC7F /* Tutorial.swift */; };
 		1AF8A3F61ED24F930042F833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F51ED24F930042F833 /* AppDelegate.swift */; };
 		1AF8A3F81ED24F930042F833 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F71ED24F930042F833 /* GameScene.sks */; };
 		1AF8A3FA1ED24F930042F833 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F91ED24F930042F833 /* Actions.sks */; };
@@ -48,7 +48,7 @@
 		1A0610951ED3D5D4005276FF /* StartMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartMenu.swift; sourceTree = "<group>"; };
 		1A24ACD51ED69206001D2ECA /* LevelSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelect.swift; sourceTree = "<group>"; };
 		1A24ACD71ED6921C001D2ECA /* LevelSelect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelSelect.sks; sourceTree = "<group>"; };
-		1AA5893A1EE0F4F000F5EC7F /* Level0.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level0.swift; sourceTree = "<group>"; };
+		1AA5893A1EE0F4F000F5EC7F /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
 		1AF8A3F21ED24F930042F833 /* Giraffe_Theory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giraffe_Theory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF8A3F51ED24F930042F833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AF8A3F71ED24F930042F833 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 		1AA589391EE0F4C900F5EC7F /* Levels */ = {
 			isa = PBXGroup;
 			children = (
-				1AA5893A1EE0F4F000F5EC7F /* Level0.swift */,
+				1AA5893A1EE0F4F000F5EC7F /* Tutorial.swift */,
 			);
 			name = Levels;
 			sourceTree = "<group>";
@@ -316,7 +316,7 @@
 				1A24ACD61ED69206001D2ECA /* LevelSelect.swift in Sources */,
 				1AF8A3FE1ED24F930042F833 /* GameViewController.swift in Sources */,
 				1AF8A3F61ED24F930042F833 /* AppDelegate.swift in Sources */,
-				1AA5893B1EE0F4F000F5EC7F /* Level0.swift in Sources */,
+				1AA5893B1EE0F4F000F5EC7F /* Tutorial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
