@@ -17,9 +17,6 @@ class Level {
     
     //MARK: member variables
     
-    var menuButton: SKSpriteNode! = nil
-    
-    var runButton: SKSpriteNode! = nil
     
     private let startingNodes : [(Float, Float, SKSpriteNode)]    // Nodes represented by an array of integer tuples
     // Exactly how the onscreen position of the nodes will be represented and stored, I don't know

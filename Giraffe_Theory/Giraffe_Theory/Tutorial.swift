@@ -8,6 +8,6 @@
 
 import Foundation
 
-//class Level0: Level {
-//    //Finish making a generic Level first
-//}
+class Tutorial: GameScene {
+    //Finish making a generic Level first
+}
