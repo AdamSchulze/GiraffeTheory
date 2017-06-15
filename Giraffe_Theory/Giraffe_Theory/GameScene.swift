@@ -22,7 +22,11 @@ class GameScene: SKScene {
 //    // An array of ints that correspond to an indexes in startNodes, giving us an array of edges that will be initialized at the beginning of the level.
 //    private var startEdges : [Int] = []
     
-    var spriteArray: [SKSpriteNode] = [SKSpriteNode]()
+    //Array of nodes/bodies
+    var nodeArray: [SKSpriteNode] = [SKSpriteNode]()
+    
+    //Array of heads and necks
+    var edgeArray: [SKSpriteNode] = [SKSpriteNode]()
     
     // The player's score (out of 3 stars). The level will only advance if the player has at least one star.
     var stars : Int = 0
@@ -32,14 +36,15 @@ class GameScene: SKScene {
     var selectedButton: SKSpriteNode? //Keeps track of the currently selected button/node
     
     // texture to be used for all giraffe heads
-    let giraffeHead = SKTexture(imageNamed: "giraffeHead")
+    let giraffeHead = SKTexture(imageNamed: "GiraffeHead")
     
     var endGiraffe: Int = 1
     
     //Everything Below was written as default code. May be useful, but we will likely delete
     
     override func didMove(to view: SKView) {
-        
+        menuButton = self.childNode(withName: "MenuButtonNode") as? SKSpriteNode
+        runButton = self.childNode(withName: "RunButtonNode") as? SKSpriteNode
     }
     
     
@@ -50,7 +55,7 @@ class GameScene: SKScene {
      * Output: True if there is a giraffe node at specified coordinates, false otherwise
      */
     func isGiraffe(touchLocation: CGPoint) -> Bool {
-        for sprite in spriteArray {
+        for sprite in nodeArray {
             if sprite.contains(touchLocation) {
                 selectedButton = sprite
                 return true
@@ -80,7 +85,9 @@ class GameScene: SKScene {
                 //handleRunButtonHover(isHovering: true)
                 
             } else if isGiraffe(touchLocation: touch.location(in: self)){
-                newGiraffeHead = 
+                let newGiraffeHead = SKSpriteNode(texture: giraffeHead)
+                edgeArray.append(newGiraffeHead)
+                selectedButton = newGiraffeHead
             }
             
         }
@@ -95,7 +102,7 @@ class GameScene: SKScene {
             } else if selectedButton == runButton {
                 //handleTutorialButtonHover(isHovering: (tutorialButton.contains(touch.location(in: self))))
             } else if isGiraffe(touchLocation: touch.location(in: self)) {
-                //extend giraffe neck as the giraffe head follows the touch
+                selectedButton!.position = touch.location(in: self)
             }
         }
     }
@@ -119,7 +126,7 @@ class GameScene: SKScene {
                     handleRunButtonClick()
                 }
             } else if isGiraffe(touchLocation: touch.location(in: self)) {
-                // add edge to edgelist (and update the graphics accordingly)
+                selectedButton!.position = touch.location(in: self)
             }
             
         }

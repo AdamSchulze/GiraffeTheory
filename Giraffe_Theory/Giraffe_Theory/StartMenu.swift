@@ -111,7 +111,10 @@ class StartMenu: SKScene {
     }
     
     func handleTutorialButtonClick() {
-        print("Tutorial Button Clicked")
+        let transition = SKTransition.reveal(with: .down, duration: 0.75)
+        let nextScene = GameScene(fileNamed: "Tutorial")
+        nextScene?.scaleMode = scaleMode
+        view?.presentScene(nextScene!, transition: transition)
     }
     
 }
