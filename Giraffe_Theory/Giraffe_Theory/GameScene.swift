@@ -46,12 +46,11 @@ class GameScene: SKScene {
     //Everything Below was written as default code. May be useful, but we will likely delete
     
     override func didMove(to view: SKView) {
-<<<<<<< HEAD
+
         menuButton = self.childNode(withName: "MenuButtonNode") as? SKSpriteNode
         runButton = self.childNode(withName: "RunButtonNode") as? SKSpriteNode
-=======
         squirrel = self.childNode(withName: "Squirrel") as? SKSpriteNode
->>>>>>> 9ed8be15515cd5bc1e8cc47a9852794db8d4f61d
+
     }
     
     
