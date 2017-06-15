@@ -11,6 +11,7 @@ import GameplayKit
 
 // General Level class containing data members and functions that any level would have
 class GameScene: SKScene {
+    
     var menuButton: SKSpriteNode! = nil
     
     var runButton: SKSpriteNode! = nil
@@ -40,11 +41,17 @@ class GameScene: SKScene {
     
     var endGiraffe: Int = 1
     
+    var squirrel: SKSpriteNode! = nil
+    
     //Everything Below was written as default code. May be useful, but we will likely delete
     
     override func didMove(to view: SKView) {
+<<<<<<< HEAD
         menuButton = self.childNode(withName: "MenuButtonNode") as? SKSpriteNode
         runButton = self.childNode(withName: "RunButtonNode") as? SKSpriteNode
+=======
+        squirrel = self.childNode(withName: "Squirrel") as? SKSpriteNode
+>>>>>>> 9ed8be15515cd5bc1e8cc47a9852794db8d4f61d
     }
     
     
@@ -148,23 +155,10 @@ class GameScene: SKScene {
     }
     
     func handleRunButtonClick() {
-        //assumes squirrel is at start
-        var currentGiraffe = 0
-        var nextGiraffe = 1
-        while currentGiraffe != endGiraffe {
-            if nextGiraffe > endGiraffe {
-                print("Try Again!")
-                // display retry message
-            }
-            if gameGraph.canTravel(begin: currentGiraffe, end: nextGiraffe) {
-                // move the squirrel sprite
-                currentGiraffe = nextGiraffe
-                nextGiraffe = 1 //TODO: change if this makes unnecessary computations
-            }
-            nextGiraffe += 1
-        }
-        print("Congratulations")
-        //display victory message and calculate score
+        
+        
+        
+        
     }
     
     override func update(_ currentTime: TimeInterval) {
