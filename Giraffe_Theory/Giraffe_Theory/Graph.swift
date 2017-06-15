@@ -14,23 +14,6 @@ import SpriteKit
 // Nodes are numbered: nodes go from 0 to size.
 class Graph {
     
-    // The node struct might not be necessary in this file.
-    /*struct Node {
-        var position: (Int, Int)!  // Position, in (x, y) pixels of the Node
-        // TODO: add more fields
-        
-        // Three possible constructors for a Node
-        init() {
-            position = (0, 0)
-        }
-        init(x: Int, y: Int) {
-            position = (x, y)
-        }
-        init(otherpos: (Int, Int)) {
-            position = otherpos
-        }
-    }*/
-    
     //MARK: member variables
     
     private var size: Int!    // Graph size is initialized upon object creation.
@@ -139,7 +122,7 @@ class Graph {
         }
         var min: Double! = nil
         for i in 0..<size {
-            if min != nil && matrix[node][i] != nil {
+            if min == nil && matrix[node][i] != nil {
                 min = matrix[node][i]
             }
             else if matrix[node][i] != nil && (matrix[node][i]?.isLess(than: min))! {
@@ -147,6 +130,25 @@ class Graph {
             }
         }
         return min
+    }
+    
+    func findMinEdgeIndex(node: Int) -> Int? {
+        if node > size {
+            return nil
+        }
+        var ret: Int! = nil
+        var min: Double! = nil
+        for i in 0..<size {
+            if min == nil && matrix[node][i] != nil {
+                min = matrix[node][i]
+                ret = i
+            }
+            else if matrix[node][i] != nil && (matrix[node][i]?.isLess(than: min))! {
+                min = matrix[node][i]
+                ret = i
+            }
+        }
+        return ret
     }
     
     func addNode() {    // Not sure if this one is necessary for us?
