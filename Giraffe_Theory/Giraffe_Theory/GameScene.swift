@@ -154,10 +154,24 @@ class GameScene: SKScene {
     }
     
     func handleRunButtonClick() {
+        // The squirrel always starts at the node labelled 0.
+        var currentNode = 0
         
-        
-        
-        
+        while gameGraph.findMinEdgeIndex(node: currentNode) != nil {
+            let nextNode = gameGraph.findMinEdgeIndex(node: currentNode)
+            // animate the squirrel: moveTo(from: currentNode, to: nextNode)
+            currentNode = nextNode!
+            //if currentNode == endNode {
+            //  victory()
+            //}
+            /*if let touch = UITapGestureRecognizer() {
+             if stopButton.contains(touch.location(in: self)) {
+             break
+             }
+             }*/
+            // handle being able to press the "stop" button to avoid an infinite loop here
+        }
+ 
     }
     
     override func update(_ currentTime: TimeInterval) {
