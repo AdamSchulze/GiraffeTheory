@@ -7,7 +7,11 @@
 //
 
 import Foundation
+import SpriteKit
 
 class Tutorial: GameScene {
-    //Finish making a generic Level first
+    override func didMove(to view: SKView) {
+        super.didMove(to: SKView)
+        gameGraph(3)
+    }
 }
