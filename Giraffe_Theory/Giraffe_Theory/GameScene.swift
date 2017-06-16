@@ -96,6 +96,7 @@ class GameScene: SKScene {
                 //handleRunButtonHover(isHovering: true)
                 
             } else if isGiraffe(touchLocation: touch.location(in: self)){
+                print(selectedButton!.name)
                 startNode = nodeArray.index(of: selectedButton!)!
                 let newGiraffeHead = SKSpriteNode(texture: giraffeHead)
                 edgeArray.append(newGiraffeHead)
@@ -142,8 +143,13 @@ class GameScene: SKScene {
                     print("Run Button Clicked")
                 }
             } else if isGiraffe(touchLocation: touch.location(in: self)) {
+                print(selectedButton!.name)
+                if let name = selectedButton!.name? {
+                    let index = Int(String(name[name.startIndex.advancedBy(7)]))
+                }
+                
                 selectedHead!.position = (selectedButton?.position)!
-                self.gameGraph.addEdge(begin: startNode, end: nodeArray.index(of: selectedButton!)!, weight: 1.0)
+                self.gameGraph.addEdge(begin: startNode, end: index, weight: 1.0)
                 print("A Giraffe is born")
             }
             
