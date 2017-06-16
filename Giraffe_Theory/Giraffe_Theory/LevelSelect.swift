@@ -23,11 +23,11 @@ class LevelSelect: SKScene {
         print("Moved to LevelSelect.swift")
         for i in 1...numLevels {
             print(i)
-            //levelButtons.append((self.childNode(withName: "Level" + "\(i)") as? SKSpriteNode)!)
-            levelButtons[i-1] = ((self.childNode(withName: "Level" + "\(i)") as? SKSpriteNode)!)
+            levelButtons.append((self.childNode(withName: "Level" + "\(i)") as? SKSpriteNode)!)
+            //levelButtons[i-1] = ((self.childNode(withName: "Level" + "\(i)") as? SKSpriteNode)!)
         }
     }
-    
+
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         if let touch = touches.first {
