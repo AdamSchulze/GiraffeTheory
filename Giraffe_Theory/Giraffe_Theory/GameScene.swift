@@ -32,7 +32,7 @@ class GameScene: SKScene {
     // The player's score (out of 3 stars). The level will only advance if the player has at least one star.
     var stars : Int = 0
     
-    private var gameGraph : Graph!
+    var gameGraph : Graph!
     
     var selectedButton: SKSpriteNode? //Keeps track of the currently selected button/node
     
@@ -153,7 +153,16 @@ class GameScene: SKScene {
     }
     
     func handleMenuButtonClick() {
-        //TODO: bring up a new sprite/scene with the menu
+        /*  
+         *  The following code brings back the main menu.
+         *  This function should actually bring up a sprite or pop up menu with options.
+         *  One of those options is to go back to the main menu.
+         *  While this code works, it is incomplete.
+         */
+        let transition = SKTransition.reveal(with: .up, duration: 0.75)
+        let menu = StartMenu(fileNamed: "StartMenu")
+        menu?.scaleMode = scaleMode
+        view?.presentScene(menu!, transition: transition)
     }
     
     func handleRunButtonClick() {
