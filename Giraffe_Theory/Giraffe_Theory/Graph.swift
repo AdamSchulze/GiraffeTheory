@@ -71,6 +71,16 @@ class Graph {
     
     // MARK: functions
     
+    func setSize(newSize: Int) {
+        self.size = newSize
+        for i in 0..<size {
+            for j in 0..<size {
+                matrix[i][j] = nil
+            }
+        }
+    }
+    
+    
     /*
      *  Function canTravel returns true if there is an edge connecting the node at begin to the node at end, false otehrwise.
      *  @params Ints begin and end, indices of the beginning and ending nodes, respectively.

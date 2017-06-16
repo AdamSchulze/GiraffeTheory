@@ -158,12 +158,21 @@ class GameScene: SKScene {
         //TODO: handle hovering textures
     }
     
-    func handleRunButtonHover(isHovering: Bool){
+    func handleRunButtonHover(isHovering: Bool) {
         //TODO: handle hovering textures
     }
     
     func handleMenuButtonClick() {
-        //TODO: bring up a new sprite/scene with the menu
+        /*  
+         *  The following code brings back the main menu.
+         *  This function should actually bring up a sprite or pop up menu with options.
+         *  One of those options is to go back to the main menu.
+         *  While this code works, it is incomplete.
+         */
+        let transition = SKTransition.reveal(with: .up, duration: 0.75)
+        let menu = StartMenu(fileNamed: "StartMenu")
+        menu?.scaleMode = scaleMode
+        view?.presentScene(menu!, transition: transition)
     }
     
     func handleRunButtonClick() {
@@ -178,9 +187,9 @@ class GameScene: SKScene {
             //  victory()
             //}
             /*if let touch = UITapGestureRecognizer() {
-             if stopButton.contains(touch.location(in: self)) {
-             break
-             }
+                if stopButton.contains(touch.location(in: self)) {
+                    break
+                }
              }*/
             // handle being able to press the "stop" button to avoid an infinite loop here
         }
