@@ -26,6 +26,7 @@
 		1AF8A41C1ED24F940042F833 /* Giraffe_TheoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A41B1ED24F940042F833 /* Giraffe_TheoryUITests.swift */; };
 		CF44AD6E1EDE4D9B00D42E80 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF44AD6D1EDE4D9B00D42E80 /* Graph.swift */; };
 		CF44AD701EDE71DE00D42E80 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF44AD6F1EDE71DE00D42E80 /* Level.swift */; };
+		CFF33B7D1EF48C1700ED3616 /* MenuDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF33B7C1EF48C1700ED3616 /* MenuDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		1AF8A41D1ED24F940042F833 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF44AD6D1EDE4D9B00D42E80 /* Graph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		CF44AD6F1EDE71DE00D42E80 /* Level.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
+		CFF33B7C1EF48C1700ED3616 /* MenuDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				1AF8A4071ED24F930042F833 /* Info.plist */,
 				CF44AD6D1EDE4D9B00D42E80 /* Graph.swift */,
 				CF44AD6F1EDE71DE00D42E80 /* Level.swift */,
+				CFF33B7C1EF48C1700ED3616 /* MenuDialog.swift */,
 				1A54EA421EF48DF1007A20F2 /* GiraffeHead.png */,
 			);
 			path = Giraffe_Theory;
@@ -320,6 +323,7 @@
 				CF44AD6E1EDE4D9B00D42E80 /* Graph.swift in Sources */,
 				CF44AD701EDE71DE00D42E80 /* Level.swift in Sources */,
 				1AF8A3FC1ED24F930042F833 /* GameScene.swift in Sources */,
+				CFF33B7D1EF48C1700ED3616 /* MenuDialog.swift in Sources */,
 				1A0610961ED3D5D4005276FF /* StartMenu.swift in Sources */,
 				1A24ACD61ED69206001D2ECA /* LevelSelect.swift in Sources */,
 				1AF8A3FE1ED24F930042F833 /* GameViewController.swift in Sources */,
