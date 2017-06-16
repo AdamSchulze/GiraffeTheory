@@ -145,7 +145,7 @@ class GameScene: SKScene {
         //TODO: handle hovering textures
     }
     
-    func handleRunButtonHover(isHovering: Bool){
+    func handleRunButtonHover(isHovering: Bool) {
         //TODO: handle hovering textures
     }
     
@@ -165,9 +165,9 @@ class GameScene: SKScene {
             //  victory()
             //}
             /*if let touch = UITapGestureRecognizer() {
-             if stopButton.contains(touch.location(in: self)) {
-             break
-             }
+                if stopButton.contains(touch.location(in: self)) {
+                    break
+                }
              }*/
             // handle being able to press the "stop" button to avoid an infinite loop here
         }
