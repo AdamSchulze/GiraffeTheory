@@ -122,6 +122,7 @@ class GameScene: SKScene {
                 
                 if (menuButton.contains(touch.location(in: self))) {
                     handleMenuButtonClick()
+                    print("Menu Button Clicked")
                 }
                 
             } else if selectedButton == runButton {
@@ -130,9 +131,11 @@ class GameScene: SKScene {
                 
                 if (runButton.contains(touch.location(in: self))) {
                     handleRunButtonClick()
+                    print("Run Button Clicked")
                 }
             } else if isGiraffe(touchLocation: touch.location(in: self)) {
                 selectedButton!.position = touch.location(in: self)
+                print("A Giraffe is born")
             }
             
         }
