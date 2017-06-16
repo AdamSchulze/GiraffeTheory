@@ -11,9 +11,9 @@
 		1A0610961ED3D5D4005276FF /* StartMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0610951ED3D5D4005276FF /* StartMenu.swift */; };
 		1A24ACD61ED69206001D2ECA /* LevelSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A24ACD51ED69206001D2ECA /* LevelSelect.swift */; };
 		1A24ACD81ED6921C001D2ECA /* LevelSelect.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1A24ACD71ED6921C001D2ECA /* LevelSelect.sks */; };
+		1A54EA431EF48DF1007A20F2 /* GiraffeHead.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A54EA421EF48DF1007A20F2 /* GiraffeHead.png */; };
 		1A689C601EF20BDB008C66B0 /* Tutorial.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1A689C5F1EF20BDB008C66B0 /* Tutorial.sks */; };
 		1AA5893B1EE0F4F000F5EC7F /* Tutorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AA5893A1EE0F4F000F5EC7F /* Tutorial.swift */; };
-		1AB801C81EF2137300E5B36F /* GiraffeHead.png in Resources */ = {isa = PBXBuildFile; fileRef = 1AB801C71EF2137300E5B36F /* GiraffeHead.png */; };
 		1AF8A3F61ED24F930042F833 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F51ED24F930042F833 /* AppDelegate.swift */; };
 		1AF8A3F81ED24F930042F833 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F71ED24F930042F833 /* GameScene.sks */; };
 		1AF8A3FA1ED24F930042F833 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 1AF8A3F91ED24F930042F833 /* Actions.sks */; };
@@ -51,9 +51,9 @@
 		1A0610951ED3D5D4005276FF /* StartMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartMenu.swift; sourceTree = "<group>"; };
 		1A24ACD51ED69206001D2ECA /* LevelSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelect.swift; sourceTree = "<group>"; };
 		1A24ACD71ED6921C001D2ECA /* LevelSelect.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = LevelSelect.sks; sourceTree = "<group>"; };
+		1A54EA421EF48DF1007A20F2 /* GiraffeHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GiraffeHead.png; sourceTree = "<group>"; };
 		1A689C5F1EF20BDB008C66B0 /* Tutorial.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Tutorial.sks; sourceTree = "<group>"; };
 		1AA5893A1EE0F4F000F5EC7F /* Tutorial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tutorial.swift; sourceTree = "<group>"; };
-		1AB801C71EF2137300E5B36F /* GiraffeHead.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GiraffeHead.png; sourceTree = "<group>"; };
 		1AF8A3F21ED24F930042F833 /* Giraffe_Theory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giraffe_Theory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AF8A3F51ED24F930042F833 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1AF8A3F71ED24F930042F833 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 				CF44AD6D1EDE4D9B00D42E80 /* Graph.swift */,
 				CF44AD6F1EDE71DE00D42E80 /* Level.swift */,
 				CFF33B7C1EF48C1700ED3616 /* MenuDialog.swift */,
-				1AB801C71EF2137300E5B36F /* GiraffeHead.png */,
+				1A54EA421EF48DF1007A20F2 /* GiraffeHead.png */,
 			);
 			path = Giraffe_Theory;
 			sourceTree = "<group>";
@@ -292,7 +292,7 @@
 				1A689C601EF20BDB008C66B0 /* Tutorial.sks in Resources */,
 				1AF8A3F81ED24F930042F833 /* GameScene.sks in Resources */,
 				1AF8A4031ED24F930042F833 /* Assets.xcassets in Resources */,
-				1AB801C81EF2137300E5B36F /* GiraffeHead.png in Resources */,
+				1A54EA431EF48DF1007A20F2 /* GiraffeHead.png in Resources */,
 				1AF8A4061ED24F930042F833 /* LaunchScreen.storyboard in Resources */,
 				1A24ACD81ED6921C001D2ECA /* LevelSelect.sks in Resources */,
 				1AF8A3FA1ED24F930042F833 /* Actions.sks in Resources */,
