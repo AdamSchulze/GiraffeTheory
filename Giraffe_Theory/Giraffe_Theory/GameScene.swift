@@ -16,8 +16,6 @@ class GameScene: SKScene {
     
     var runButton: SKSpriteNode! = nil
     
-    // Number of Giraffes the player will be allowed to use
-    private var numGiraffes : Int = 3
     // An array of arrays of doubles which contain the positions for nodes that will be initialized at the beginning of the level.
 //    private var startNodes : [[Double]] = []
 //    // An array of ints that correspond to an indexes in startNodes, giving us an array of edges that will be initialized at the beginning of the level.
@@ -53,7 +51,7 @@ class GameScene: SKScene {
         menuButton = self.childNode(withName: "MenuButtonNode") as? SKSpriteNode
         runButton = self.childNode(withName: "RunButtonNode") as? SKSpriteNode
         squirrel = self.childNode(withName: "Squirrel") as? SKSpriteNode
-        for i in 0..<numGiraffes {
+        for i in 0..<gameGraph.getSize() {
             nodeArray.append((self.childNode(withName: "Giraffe" + "\(i)") as? SKSpriteNode)!)
         }
     }
@@ -141,8 +139,11 @@ class GameScene: SKScene {
                     handleRunButtonClick()
                     print("Run Button Clicked")
                 }
-            } else if isGiraffe(touchLocation: touch.location(in: self)) {
+            } else if isGiraffe(touchLocation: touch.location(in: self)) && nodeArray[startNode] != selectedButton {
                 selectedHead!.position = (selectedButton?.position)!
+                if startNode == nil {
+                    print("startnode problem")
+                }
                 self.gameGraph.addEdge(begin: startNode, end: nodeArray.index(of: selectedButton!)!, weight: 1.0)
                 print("A Giraffe is born")
             }
