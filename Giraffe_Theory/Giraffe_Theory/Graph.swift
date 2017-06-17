@@ -42,6 +42,7 @@ class Graph {
      */
     init(size: Int) {
         self.size = size
+        matrix = Array(repeating: (Array(repeating: Double(), count: size)), count: size)
         for i in 0..<size {
             for j in 0..<size {
                 matrix[i][j] = nil
@@ -78,6 +79,10 @@ class Graph {
                 matrix[i][j] = nil
             }
         }
+    }
+    
+    func getSize() -> Int {
+        return size
     }
     
     

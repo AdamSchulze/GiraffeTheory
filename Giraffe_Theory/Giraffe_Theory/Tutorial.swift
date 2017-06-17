@@ -10,8 +10,5 @@ import Foundation
 import SpriteKit
 
 class Tutorial: GameScene {
-    override func didMove(to view: SKView) {
-        super.didMove(to: SKView)
-        gameGraph(3)
-    }
+    //This file may be irrelevant
 }
